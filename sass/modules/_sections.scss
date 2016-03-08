@@ -1,0 +1,118 @@
+main {
+	margin-bottom: 40px;
+	.main-content,
+	.sidebar {
+		border-top: 1px solid #e1dbce;
+		border-bottom: 1px solid #e1dbce;
+	}
+	.main-content {
+		padding-top: 15px;
+		border-left: 1px solid #e1dbce;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	.sidebar {
+		border-right: 1px solid #e1dbce;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}
+.main-content {
+	background: white;
+	border-right: 1px solid #e8e3da;
+	height: 100%;
+}
+.sidebar {
+	height: 100%;
+	background: #f4f2ec;
+	border-left: 1px solid #f0ede5;
+	padding-top: 15px;
+	h3 {
+		font-family: 'Myriad';
+		text-transform: uppercase;
+		clear: both;
+	}
+	.search-box {
+		h3:first-child {
+			margin-top: 0px;
+		}
+		select, input[type="submit"] {
+			margin: 8px 0px;
+		}
+		select, 
+		input[type="text"],
+		input[type="email"] {
+			@extend .outline-grey-shadowbox;
+			line-height: 25px;
+			border-radius: 5px;
+			border: 1px solid #cfcdc5;
+			padding-left: 5px;
+		}
+		select {
+			width: 100%;
+			background: url(../img/select-button.gif) no-repeat #fff;
+			background-position: 98%;
+			-webkit-appearance: none;
+			padding: 0px;
+		}
+		input[type="text"] {
+			margin-right: 10px;
+		}
+		input[type="email"] {
+			width: 100%;
+		}
+		input[type="submit"] {
+			@extend .green-gradient-background;
+			@extend .outline-grey-shadowbox;
+			font-family: 'Klavika';
+			color: white;
+			text-transform: uppercase;
+			border: none;
+			border-radius: 5px;
+			padding: 5px 10px;
+			border-top: 1px solid #0c932f;
+			border-left: 1px solid #0c932f;
+			text-shadow: 0px -2px 0px rgba(28, 124, 31, 1);
+		}
+		.main-search-container {
+			& input {
+				border-right: none;
+				width: 85%;
+			}
+			& input,
+			& div {
+				float: left;
+			}
+			div {
+				overflow: hidden;
+				padding: 19px;
+				position: relative;
+				left: -4px;
+				&:after {
+					content: '';
+					transform: rotate(45deg);
+					@extend .green-gradient-background;
+					@extend .outline-grey-shadowbox;
+					float: right;
+					border-radius: 5px;
+					position: absolute;
+					padding: 12px;
+					left: -14px;
+					top: 11px;
+					border: 1px solid #2da433;
+				}
+			}
+		}
+	}
+	.news-box {
+		margin-bottom: 30px;
+		.news-post {
+			margin-top: 15px;
+			a {
+				margin: 5px 0px;
+				font-weight: bold;
+				color: #3f3b30	;
+			}
+		}
+	}
+}

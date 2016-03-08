@@ -1,0 +1,22 @@
+.post {
+	.post-image-wrapper {
+		height: 120px;
+		overflow: hidden;
+		border: 4px solid #e9e6df;
+		width: 100%;
+		text-align: center;
+		border-radius: 5px;
+		img {
+			width: 100%;
+			overflow: hidden;
+			border-radius: 5px;
+		}
+	}
+	a {
+		color: #3a3731;
+		h4 {
+			color: #3a3731;	
+			font-weight: bold;
+		}
+	}
+}

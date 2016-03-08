@@ -1,0 +1,145 @@
+.slider-box {
+	.mask {
+		overflow: hidden;
+		position: relative;
+		border-radius: 10px;
+		.slide-container {
+			.slide {
+				position: absolute;
+				opacity: 0;
+				width:100%;
+				& img {
+					width: 100%;
+				}
+				& .slide-text {
+					background: rgba(0,0,0,0.7);
+					width: 35%;
+					top: 0;
+					right: 0;
+					position: absolute;
+					height: 100%;
+					z-index: 100;
+					padding: 0px 20px;
+					color: white;
+					& span, 
+					& a {
+						color: #28b028;
+					}
+					& h2 {
+						font-family: 'Zurich';
+						margin-bottom: 0px;
+						margin-top: 10px;
+					}
+					& span {
+						font-family: 'Zurich';
+						margin-bottom: 10px;
+						display: block;
+					}
+				}
+			}
+			.active-slide {
+				opacity: 1;
+			}
+		}
+		.triggers {
+			position: absolute;
+			color: white;
+			left: 67.2%;
+			top: 80%;
+			z-index: 500;
+			& li {
+				cursor: pointer;
+				background: grey;
+				display: inline-block;
+				padding: 5px 10px;
+				margin: 3px 3px;
+				border-radius: 50%;
+			}
+			.active-trigger {
+				@extend .green-gradient-background;
+			}
+		}
+	}
+	.selected {
+		@extend .green-gradient-background;
+	}
+	.slider-comment {
+		position: relative;
+		& h1 {
+			font-family: 'Zurich';
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+		p {
+			width: 60%;
+		}
+		.green-link {
+			color: #28b028;
+			text-decoration: underline;
+		}
+		img {
+			position: absolute;
+			z-index: 1000;
+			bottom: -8px;
+			left: 70%;
+			width: 140px;
+		}
+	}
+}
+.post-tabs {
+	@extend .tab-flex;
+	border-radius: 5px;
+	& li:first-child {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+	& li:last-child {
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	& li {
+		font-family: 'Zurich';
+		border: 1px solid #cfcdc5;
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 40px;
+		cursor: pointer;
+		& span {
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 5px 0 5px 8.66px;
+				border-color: transparent transparent transparent #42ac2d;
+				left: -15px;
+				top: 25%;
+			}
+		}
+	}
+	.active-tab {
+		@extend .green-gradient-background;
+		@extend .inset-green-shadowbox;
+		color: white;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			display: block;
+			bottom: -10px;
+			left: 50%;
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 5px 5px 5px 5px;
+			border-color: #0c932f transparent transparent transparent;
+		}
+		& span:before {
+			display: none;
+		}
+	}
+
+}

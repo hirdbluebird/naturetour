@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Zurich';
+	src: url(../fonts/zurich/Zurich__Bold_Condensed_BT.ttf);
+	src: url(../fonts/zurich/Zurich__Condensed_BT.ttf);
+}
+@font-face {
+	font-family: 'Myriad';
+	src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+	font-family: 'Klavika';
+	src: url(../fonts/Klavika_Medium_Medium.otf);
+}
+ul {
+	list-style: none;
+	padding: 0px;
+}
+.bold-text {
+	font-weight: bold;
+}
