@@ -5,6 +5,7 @@
 		border-radius: 10px;
 		.slide-container {
 			.slide {
+				animation: all 0.3s linear;
 				position: absolute;
 				opacity: 0;
 				width:100%;

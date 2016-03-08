@@ -686,7 +686,7 @@ main .sidebar {
 /* line 78, ../sass/modules/_sections.scss */
 .sidebar .search-box .main-search-container input {
   border-right: none;
-  width: 85%;
+  width: 84%;
 }
 /* line 82, ../sass/modules/_sections.scss */
 .sidebar .search-box .main-search-container input, .sidebar .search-box .main-search-container div {
@@ -706,9 +706,9 @@ main .sidebar {
   float: right;
   border-radius: 5px;
   position: absolute;
-  padding: 12px;
+  padding: 11px;
   left: -14px;
-  top: 11px;
+  bottom: 3px;
   border: 1px solid #2da433;
 }
 /* line 107, ../sass/modules/_sections.scss */
@@ -734,15 +734,16 @@ main .sidebar {
 }
 /* line 7, ../sass/modules/_components.scss */
 .slider-box .mask .slide-container .slide {
+  animation: all 0.3s linear;
   position: absolute;
   opacity: 0;
   width: 100%;
 }
-/* line 11, ../sass/modules/_components.scss */
+/* line 12, ../sass/modules/_components.scss */
 .slider-box .mask .slide-container .slide img {
   width: 100%;
 }
-/* line 14, ../sass/modules/_components.scss */
+/* line 15, ../sass/modules/_components.scss */
 .slider-box .mask .slide-container .slide .slide-text {
   background: rgba(0, 0, 0, 0.7);
   width: 35%;
@@ -754,27 +755,27 @@ main .sidebar {
   padding: 0px 20px;
   color: white;
 }
-/* line 24, ../sass/modules/_components.scss */
+/* line 25, ../sass/modules/_components.scss */
 .slider-box .mask .slide-container .slide .slide-text span, .slider-box .mask .slide-container .slide .slide-text a {
   color: #28b028;
 }
-/* line 28, ../sass/modules/_components.scss */
+/* line 29, ../sass/modules/_components.scss */
 .slider-box .mask .slide-container .slide .slide-text h2 {
   font-family: 'Zurich';
   margin-bottom: 0px;
   margin-top: 10px;
 }
-/* line 33, ../sass/modules/_components.scss */
+/* line 34, ../sass/modules/_components.scss */
 .slider-box .mask .slide-container .slide .slide-text span {
   font-family: 'Zurich';
   margin-bottom: 10px;
   display: block;
 }
-/* line 40, ../sass/modules/_components.scss */
+/* line 41, ../sass/modules/_components.scss */
 .slider-box .mask .slide-container .active-slide {
   opacity: 1;
 }
-/* line 44, ../sass/modules/_components.scss */
+/* line 45, ../sass/modules/_components.scss */
 .slider-box .mask .triggers {
   position: absolute;
   color: white;
@@ -782,7 +783,7 @@ main .sidebar {
   top: 80%;
   z-index: 500;
 }
-/* line 50, ../sass/modules/_components.scss */
+/* line 51, ../sass/modules/_components.scss */
 .slider-box .mask .triggers li {
   cursor: pointer;
   background: grey;
@@ -791,26 +792,26 @@ main .sidebar {
   margin: 3px 3px;
   border-radius: 50%;
 }
-/* line 66, ../sass/modules/_components.scss */
+/* line 67, ../sass/modules/_components.scss */
 .slider-box .slider-comment {
   position: relative;
 }
-/* line 68, ../sass/modules/_components.scss */
+/* line 69, ../sass/modules/_components.scss */
 .slider-box .slider-comment h1 {
   font-family: 'Zurich';
   text-transform: uppercase;
   margin-bottom: 5px;
 }
-/* line 73, ../sass/modules/_components.scss */
+/* line 74, ../sass/modules/_components.scss */
 .slider-box .slider-comment p {
   width: 60%;
 }
-/* line 76, ../sass/modules/_components.scss */
+/* line 77, ../sass/modules/_components.scss */
 .slider-box .slider-comment .green-link {
   color: #28b028;
   text-decoration: underline;
 }
-/* line 80, ../sass/modules/_components.scss */
+/* line 81, ../sass/modules/_components.scss */
 .slider-box .slider-comment img {
   position: absolute;
   z-index: 1000;
@@ -819,21 +820,21 @@ main .sidebar {
   width: 140px;
 }
 
-/* line 89, ../sass/modules/_components.scss */
+/* line 90, ../sass/modules/_components.scss */
 .post-tabs {
   border-radius: 5px;
 }
-/* line 92, ../sass/modules/_components.scss */
+/* line 93, ../sass/modules/_components.scss */
 .post-tabs li:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 96, ../sass/modules/_components.scss */
+/* line 97, ../sass/modules/_components.scss */
 .post-tabs li:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-/* line 100, ../sass/modules/_components.scss */
+/* line 101, ../sass/modules/_components.scss */
 .post-tabs li {
   font-family: 'Zurich';
   border: 1px solid #cfcdc5;
@@ -843,11 +844,11 @@ main .sidebar {
   line-height: 40px;
   cursor: pointer;
 }
-/* line 108, ../sass/modules/_components.scss */
+/* line 109, ../sass/modules/_components.scss */
 .post-tabs li span {
   position: relative;
 }
-/* line 110, ../sass/modules/_components.scss */
+/* line 111, ../sass/modules/_components.scss */
 .post-tabs li span:before {
   content: '';
   position: absolute;
@@ -859,12 +860,12 @@ main .sidebar {
   left: -15px;
   top: 25%;
 }
-/* line 123, ../sass/modules/_components.scss */
+/* line 124, ../sass/modules/_components.scss */
 .post-tabs .active-tab {
   color: white;
   position: relative;
 }
-/* line 128, ../sass/modules/_components.scss */
+/* line 129, ../sass/modules/_components.scss */
 .post-tabs .active-tab:after {
   content: '';
   position: absolute;
@@ -877,7 +878,7 @@ main .sidebar {
   border-width: 5px 5px 5px 5px;
   border-color: #0c932f transparent transparent transparent;
 }
-/* line 140, ../sass/modules/_components.scss */
+/* line 141, ../sass/modules/_components.scss */
 .post-tabs .active-tab span:before {
   display: none;
 }
