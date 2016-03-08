@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 	startSlide();
 
-	$('.slide-container')
+	$('.mask')
 		.mouseover(function() {
 			stopSlide();
 		})
