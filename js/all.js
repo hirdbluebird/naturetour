@@ -53,32 +53,33 @@ $(document).ready(function() {
 
 	slideCount = slideCount - 1;
 
-	function startSlide() {
-		var slideAutoChange = setInterval(function() {
-			var activeSlideIndex = $('.slide-container .active-slide').index();
-			if ( slideCount === activeSlideIndex) {
-				$('.slide-container .slide').removeClass('active-slide').first().addClass('active-slide');
-				lightTrigger(0);
-			} else {
-				$('.slide-container .active-slide').removeClass('active-slide').next().addClass('active-slide');
-				lightTrigger(activeSlideIndex + 1);
-			};
-		}, 1000);
+	function autoSlide() {
+		var activeSlideIndex = $('.slide-container .active-slide').index();
+		if ( slideCount === activeSlideIndex) {
+			$('.slide-container .slide').removeClass('active-slide').first().addClass('active-slide');
+			lightTrigger(0);
+		} else {
+			$('.slide-container .active-slide').removeClass('active-slide').next().addClass('active-slide');
+			lightTrigger(activeSlideIndex + 1);
+		};
 	}
 
+	var sliderTimer;
+	function startSlide() { 
+		sliderTimer = setInterval(autoSlide, 1000); 
+	}
 	function stopSlide() {
-		var stopSlideChange = clearInterval(slideAutoChange);
+		clearInterval(sliderTimer);
 	}
 
 	startSlide();
-	stopSlide();
-	
-	$('.slide-container .slide')
+
+	$('.slide-container')
 		.mouseover(function() {
-			clearInterval(slideAutoChange);
+			stopSlide();
 		})
 		.mouseout(function() {
-			startSlide();
+			startSlide();			
 		});
 
 
